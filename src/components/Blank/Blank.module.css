@@ -1,0 +1,140 @@
+.BlankContaner {
+    position: fixed;
+
+    height: 550px;
+    width: 400px;
+
+    box-shadow: 0px 4px 30px -5px rgba(30, 30, 30, 0.63);
+    border-radius: 13px;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -275px;
+    transition: 1s;
+    display: grid;
+    grid-template-areas:
+    "L"
+    "IN"
+    "N"
+    "IP"
+    "P"
+    "S";
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 3fr;
+}
+
+
+.InputUserNameContaner {
+    grid-area: N;
+
+    height: 40px;
+    width: 400px;
+
+    text-align: center;
+}
+
+.InputPasswordContaner {
+    grid-area: P;
+
+    height: 40px;
+    width: 400px;
+
+    text-align: center;
+}
+
+.ButtonContaner {
+    grid-area: S;
+
+    margin: 0 auto;
+}
+
+
+.InputNameTitle {
+    grid-area: IN;
+
+    font-size: 20px;
+    margin-left: 82px;
+}
+
+.InputPassTitle {
+    grid-area: IP;
+
+    font-size: 20px;
+    margin-left: 82px;
+}
+
+
+.Button {
+    height: 70px;
+    width: 390px;
+
+    border-radius: 10px;
+    border: rgb(182, 28, 3) solid 5px;
+
+    background: rgba(255, 36, 0);
+    color: white;
+
+    font-size: 20px;
+
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+
+.InputName {
+    grid-area: NA;
+}
+
+.InputPass {
+    grid-area: PA;
+}
+
+input,
+input:active,
+input:focus {
+    border: deepskyblue solid 2px;
+    outline: none;
+
+    width: 235px;
+    height: 20px;
+    padding: 5px;
+
+    border-radius: 7px;
+
+    box-shadow: 0px 3px 10px -3px rgba(40, 40, 40, 0.71);
+}
+
+.Login {
+    grid-area: L;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.Eye {
+    position: absolute;
+
+    height: 25px;
+    width: 25px;
+
+    margin-top: -30px;
+    margin-left: 90px;
+}
+
+
+.emailError {
+    position: absolute;
+
+    margin-left: 80px;
+    font-size: 13px;
+    color: red;
+}
+
+.passError {
+    position: absolute;
+
+    font-size: 13px;
+    margin-left: 80px;
+    color: red;
+}
